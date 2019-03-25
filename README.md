@@ -1,4 +1,5 @@
 [image1]: https://github.com/FreedomChal/Semantic-Segmentation/blob/master/model_prediction_image_good_1.png "Model classification image  1"
+[image2]: https://github.com/FreedomChal/Semantic-Segmentation/blob/master/SemanticSegmentationModelVisualization.png "Model Visualization"
 
 
 
@@ -23,4 +24,6 @@ This repository contains a implementation of a Fully Convolutional Network (FCN)
 
 ## The Model
 
-The Model is a Fully Convolutional Network (FCN) based off of [this paper](https://arxiv.org/pdf/1605.06211.pdf). It uses a pre-trained encoder, with a decoder slightly different than the one described in the paper, but with the same central features.
+The Model is a Fully Convolutional Network (FCN) based off of [this paper](https://arxiv.org/pdf/1605.06211.pdf). It uses a pre-trained encoder, with a decoder slightly different than the one described in the paper, but with the same central features, as shown below:
+
+![alt text][image2]
