@@ -53,6 +53,8 @@ After 64 epochs, the model was not training nearly as fast. Training for more ep
 
 One somewhat strange weakness of the model is that it often classifies areas of car windshields as road. This may be due to the dark gray, road-like appearance of windshields from some angles. This does not happen in all images with car windshields in them, but it is not an uncommon occurrence. This problem could likely be fixed by just training for more epochs.
 
+An easily noticable flaw of the model it its tendency to predict choppy road edges. This is not a big problem, but is not desirable. A possible cause of the problem is the layers with 2X2 and 4X4 kernels, which could easily be changed.
+
 Another weakness of the model is its tendency to classify areas near the road that look like road as road, as shown below.
 
 ![alt text][image7]
