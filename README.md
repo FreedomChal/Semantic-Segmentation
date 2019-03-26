@@ -13,7 +13,7 @@ Classwork for the Udacity Self Driving Car Nanodegree.
 
 ## Project Details
 
-This repository contains a implementation of a Fully Convolutional Network (FCN), which is trained to classify each pixel of an image as "Road" or "Non-Road", which it can do effectively.
+This repository contains an implementation of a Fully Convolutional Network (FCN), which is trained to classify each pixel of an image as "Road" or "Non-Road", which it can do effectively.
 
 ![alt text][image1]
 
@@ -42,7 +42,7 @@ This model is able to consistently predict road pixels with 96% accuracy, usuall
 ## Training
 
 Early on, I used a batch size of 32. This value worked plenty well, so I stuck with it.
-I trained the model for 64 epochs during the final training. I had tried 16 epochs previously, but the model did not do nearly as well when I did this. When I only ran training for 16 epochs, the model usually only got 92% training accuracy at best, verses the final consistent 96% accuracy. Also, the test images revealed multiple problems, most notably, trouble dealing with shadows. Increased epochs seemed to fix these problems.
+I trained the model for 64 epochs during the final training. I had tried 16 epochs previously, but the model did not do nearly as well when I did this. When I only ran training for 16 epochs, the model usually only got 92% training accuracy at best, versus the final consistent 96% accuracy. Also, the test images revealed multiple problems, most notably, trouble dealing with shadows. Increased epochs seemed to fix these problems.
 After 64 epochs, the model was not training nearly as fast. Training for more epochs would likely result in an improvement in accuracy, but I chose not to because it would be time-consuming, and the model was already doing quite well.
 
 ![alt text][image5]
@@ -51,7 +51,7 @@ After 64 epochs, the model was not training nearly as fast. Training for more ep
 
 ![alt text][image6]
 
-One somewhat strange weakness of the model is that it often classifies areas of car windshields as road. This may be due to the dark gray, road-like appearance of windshields from some angles. This does not happen in all images with car windshields in them, but it is not an uncommon occurence. This problem could likely be fixed by just training for more epochs.
+One somewhat strange weakness of the model is that it often classifies areas of car windshields as road. This may be due to the dark gray, road-like appearance of windshields from some angles. This does not happen in all images with car windshields in them, but it is not an uncommon occurrence. This problem could likely be fixed by just training for more epochs.
 
 Another weakness of the model is its tendency to classify areas near the road that look like road as road, as shown below.
 
