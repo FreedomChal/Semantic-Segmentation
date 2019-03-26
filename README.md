@@ -51,7 +51,7 @@ After 64 epochs, the model was not training nearly as fast. Training for more ep
 
 ![alt text][image6]
 
-One somewhat strange weakness of the model is that it often classifies areas of car windshields as road. This may be due to the dark gray, road-like appearance of windshields from some angles. This does not happen in all images with car windshields in them, but it is not an uncommon occurrence. This problem could likely be fixed by just training for more epochs.
+One somewhat strange weakness of the model is that it often classifies areas of car windshields as road. This may be due to the dark gray, road-like appearance of windshields from some angles. This does not happen in all images with car windshields in them, but it is not an uncommon occurrence. This problem could likely be fixed by training on a larger dataset (Eg. Cityscapes dataset).
 
 An easily noticeable flaw of the model is its tendency to predict choppy road edges. This is not a big problem but is not desirable. A possible cause of the problem is the layers with 2X2 and 4X4 kernels, which could easily be changed.
 
@@ -59,6 +59,6 @@ Another weakness of the model is its tendency to classify areas near the road th
 
 ![alt text][image7]
 
-As with the car windshield problem, this weakness probably could be fixed or at least reduced by training for longer.
+This weakness probably could be fixed or at least reduced by training for longer.
 
-Another possible improvement to the model would be training data augmentation. By generating modified training data, the model could both train on more data, and get more unusual data, training the model to deal with dark, obstructed, or otherwise unusual images. I considered doing data augmentation, but I eventually chose not to.
+Another possible improvement to the model would be training data augmentation. By generating modified training data, the model could both train on more data, and get more unusual data, training the model to deal with dark, obstructed, or otherwise unusual images.
